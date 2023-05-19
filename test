@@ -238,6 +238,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
+    /* background-color: hsl(231, 69%, 60%); */
+    /* color: #fff; */
 }
 
 .contact .contact_text h1{
@@ -260,6 +262,7 @@
     display: inline;
     width: 30%;
     color: #000;
+    /* color: #fff; */
 }
 
 .contact .contact_form{
@@ -270,6 +273,7 @@
     width: 80%;
     height: 50px;
     border: none;
+    /* background-color: #fff; */
     border: 2px solid gray;
     padding-left: 10px;
     margin-bottom: 1em;
@@ -284,6 +288,7 @@
 .contact .contact_form form .textarea_container textarea{
     width: 80%;
     height: 100px;
+    /* background-color: #fff; */
     border: 2px solid gray;
     outline: none;
     padding: 1em;
@@ -296,6 +301,7 @@
 
 .contact .contact_form form input[type="submit"]{
     color: var(--white);
+    /* background-color: #0b829c; */
     background-color: hsl(231, 69%, 60%);;
     border: none;
     width: 120px;
