@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* HEADER */
+
+.container header{
+    position: fixed;
+    width: 100%;
+    background-color:#fff;
+    padding: 0.8em 2em;
+    z-index: 4;
+}
+
+.container .shadow{
+    box-shadow: 10px 0 10px #000;
+}
+
+.container header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container header nav .nav_left{
+    display: flex;
+    align-items: center;
+}
+
+.container header nav .nav_left img{
+    width: 50px;
+    height: 100%;
+}
+
+.container header nav .nav_left span{
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container header nav .nav_right ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.container header nav .nav_right ul li{
+    margin-right: 1.5em;
+}
+
+.container header nav .nav_right ul li a{
+    color: rgba(0, 0, 0,0.7);
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.container main{
+    background-image: url('./images/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(0.6em);
+}
+
+.container main .text{
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.container main .text h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.container main .text p{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    margin-top: 0.5em;
+}
+
+.container main button{
+    text-transform: uppercase;
+    padding: 1em 2em;
+    margin-top: 1em;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    color: #fff;
+    border-radius: 0.2em;
+}
+
+/* CHURCH INFORMATION */
+
+.main_content{
+    padding: 0em 11em;
+}
+
+/* ABOUT */
+
+.container .about .church_info{
+    width: 500px;
+    height:200px;
+    margin: 0 auto;
+}
+
+.container .about .church_info div{
+    width: 70%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(51, 80, 117,0.8), rgba(51, 80, 117,0.4)),url('./images/about_us.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    padding: 1.5em 1em;
+}
+
+.container .about .church_info div h3, .container .about .church_info div p{
+    text-align: center;
+}
+
+.container .about .church_info div h3{
+    margin-bottom: 0.6em;
+}
+
+.container .about .church_info div p{
+    line-height: 1.6em;
+}
+
+.container .about .text{
+    padding-top: 5em;
+    line-height: 1.5em;
+    color: hsl(229, 8%, 60%);
+}
+
+/* VISION */
+
+.container .vision{
+    padding-top: 5em;
+}
+
+.container .vision h4{
+    color: #000;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.container .vision h1{
+    color: #000;
+    text-align: center;
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.container .vision p{
+    color: hsl(229, 8%, 60%);
+    margin-top: 1.2em;
+    line-height: 1.5em;
+} 
+
+/* SERVICE */
+
+.service{
+    margin-top: 5em;
+    background-image: linear-gradient(to bottom, rgba(51, 80, 117,0.8), rgba(51, 80, 117,0.4)),url('./images/service.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em;
+}
+
+.service h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.service .church_services{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 3em;
+}
+
+.service .church_services h3, .service .church_services .service_time, .service .church_services .service_text{
+    color: #fff;
+}
+
+.service .church_services h3{
+    margin-bottom: 0.8em;
+}
+
+.service .church_services .service_time{
+    margin-bottom: 0.8em;
+}
+
+.service .church_services .service_text{
+    /* width: 90%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: hsl(229, 31%, 21%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1em 4em;
+}
+
+footer .left_footer{
+    display: flex;
+    align-items: center;
+}
+
+footer .left_footer .footer_logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .left_footer .footer_logo img{
+    width: 50px;
+    height: 100%;
+} 
+
+footer .left_footer .footer_logo span{
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .left_footer nav{
+    margin-left: 2em;
+}
+
+footer .left_footer nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer .left_footer nav ul li{
+    margin-right: 1em;
+}
+
+footer .left_footer nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .right_footer img{
+    margin-right: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
