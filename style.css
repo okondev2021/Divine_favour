@@ -229,22 +229,88 @@
     margin-bottom: 0.8em;
 }
 
-.service .church_services .service_text{
-    /* width: 90%; */
+
+/* CONTACT */
+
+.container .contact{
+    padding: 5em 10em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+}
+
+.contact .contact_text h1{
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+}
+
+.contact .contact_text p{
+    line-height: 25px;
+}
+
+.contact .contact_text .contactLinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.contact .contact_text .contactLinks a{
+    margin-bottom: 10px;
+    display: inline;
+    width: 30%;
+    color: #fff;
+}
+
+.contact .contact_form{
+    margin-left: 2em;
+}
+
+.contact .contact_form form .input_container input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: #fff;
+    /* border: 2px solid gray; */
+    padding-left: 10px;
+    margin-bottom: 1em;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact .contact_form form .input_container input::placeholder{
+    color: var(--white);
+}
+
+.contact .contact_form form .textarea_container textarea{
+    width: 80%;
+    height: 100px;
+    background-color: #fff;
+    /* border: 2px solid gray; */
+    outline: none;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.contact .contact_form form .textarea_container textarea::placeholder{
+    color: var(--white);
+}
+
+.contact .contact_form form input[type="submit"]{
+    color: var(--white);
+    /* background-color: #0b829c; */
+    background-color: hsl(0, 94%, 66%);
+    border: none;
+    width: 120px;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER */
 footer{
     background-color: hsl(229, 31%, 21%);
     display: flex;
